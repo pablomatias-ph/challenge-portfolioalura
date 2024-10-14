@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.04 21.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_19);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_18);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_29);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_29" data-name="Degradado sin nombre 29" x1="13.84" y1="2" x2="5.19" y2="19.66" gradientUnits="userSpaceOnUse">
+      <stop offset=".3" stop-color="#40873e"/>
+      <stop offset=".5" stop-color="#55934f"/>
+      <stop offset=".8" stop-color="#5cae45"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_19" data-name="Degradado sin nombre 19" x1=".98" y1="17.34" x2="18.3" y2="4.54" gradientUnits="userSpaceOnUse">
+      <stop offset=".57" stop-color="#40873e"/>
+      <stop offset=".72" stop-color="#619858"/>
+      <stop offset="1" stop-color="#77ac64"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_18" data-name="Degradado sin nombre 18" x1=".28" y1="10.83" x2="18.76" y2="10.83" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#71b74a"/>
+      <stop offset=".38" stop-color="#7ab561"/>
+      <stop offset=".47" stop-color="#77ad64"/>
+      <stop offset=".7" stop-color="#659e5a"/>
+      <stop offset=".9" stop-color="#40873e"/>
+    </linearGradient>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa_1">
+    <g>
+      <path class="cls-3" d="M9.01.14L.51,5.04c-.32.18-.51.52-.51.89v9.81c0,.37.2.7.51.89l8.49,4.91c.32.18.71.18,1.03,0l8.49-4.91c.32-.18.51-.52.51-.89V5.93c0-.37-.2-.7-.51-.89L10.03.14c-.16-.09-.34-.14-.51-.14s-.35.05-.51.14h0Z"/>
+      <path class="cls-1" d="M.24,16.35c.08.11.18.2.3.27l7.28,4.21,1.21.7c.18.1.39.15.59.13.07,0,.14-.02.2-.04L18.79,5.21c-.07-.07-.15-.14-.24-.19l-5.56-3.21L10.05.12c-.08-.05-.17-.08-.27-.11L.24,16.35Z"/>
+      <path class="cls-2" d="M9.15.01c-.14.01-.28.06-.41.13L.28,5.03l9.13,16.63c.13-.02.25-.06.36-.13l8.49-4.91c.26-.15.44-.41.5-.7L9.45.03c-.07-.01-.14-.02-.21-.02-.03,0-.06,0-.08,0h0Z"/>
+    </g>
+  </g>
+</svg>

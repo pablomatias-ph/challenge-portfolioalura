@@ -1,0 +1,490 @@
+/* --------- Estilos bases --------------*/
+
+:root {
+  /* Colores */
+  --color-primario--claro: #000000;
+  --color-fondo--claro: #ffffff;
+  --color-texto--claro: #000000;
+  --color-texto--oscuro: #ffffff;
+  --color-primario--oscuro: #000000;
+  --color-secundario: #005fa3;
+
+  --color-hover: #005fa3;
+
+  /* Tipografías */
+  --fuente-principal: "Lato", sans-serif;
+  --fuente-secundaria: "Archivo", sans-serif;
+
+  /* Tamaños de texto--claro */
+  --font-size-pequena: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-mediana: 1.5rem;
+  --font-size-grande: 2rem;
+  --font-size-extragrande: 3rem;
+
+  /* Espaciados */
+  --padding-base: 0.625rem;
+  --padding-grande: 1.25rem;
+  --padding-xgrande: 2rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* --------- Estilos globales --------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: var(--padding-grande);
+  line-height: 1.6;
+  color: var(--color-texto--claro);
+  background-color: black;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-texto--claro);
+}
+
+/* --------- Estilos Cabecera y menus --------------*/
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.cabecera__logo {
+  height: 60px;
+}
+
+.cabecera__titulo {
+  font-size: var(--font-size-grande);
+  font-weight: 900;
+}
+
+.hamburguesa {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.linea {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-texto);
+}
+
+.navegacion {
+  display: flex;
+}
+
+.navegacion__lista {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navegacion__elemento a {
+  font-size: var(--font-size-base);
+  transition: color 0.3s;
+
+  padding: 1rem;
+}
+
+.navegacion__elemento a:hover {
+  color: var(--color-fondo--claro);
+  font-weight: 600;
+  background-color: var(--color-primario--oscuro);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* --------- Estilos Sección PRESENTACION --------------*/
+
+.presentacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.35);
+  border-radius: 15px 300px 300px 15px;
+}
+
+.presentacion__foto {
+  border-radius: 15px 200px 200px 15px;
+  width: 25rem;
+  height: 25rem;
+}
+
+.presentacion__contenedor {
+  flex: 1;
+}
+
+.presentacion__titulo {
+  font-size: var(--font-size-extragrande);
+  font-weight: 900;
+  line-height: 3.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.presentacion__subtitulo {
+  font-size: var(--font-size-mediana);
+  margin-bottom: 1.25rem;
+}
+
+.redes {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.redes__img a {
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+/* --------- Estilos Sección A CERCA DE --------------*/
+
+.sobre-mi {
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.sobre-mi__titulo {
+  font-size: var(--font-size-grande);
+  font-weight: 900;
+}
+
+.sobre-mi__texto {
+  margin-bottom: 0.9375rem;
+  line-height: 1.8;
+}
+
+/* --------- Grilla para Sección AFICCIONES, FORMACION ACADEMICA y EXPERIENCIA PROFESIONAL --------------*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-container-grande {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  background-color: var(--color--fondo--claro);
+  padding: var(--padding-base);
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --------- Estilos Sección HABILIDADES --------------*/
+
+.habilidades {
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.habilidades__titulo {
+  font-size: var(--font-size-grande);
+  font-weight: 900;
+}
+
+.habilidades__icono {
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.habilidades__nombre {
+  font-size: var(--font-size-pequena);
+  line-height: 0.9rem;
+  font-weight: 700;
+}
+
+/* --------- Estilos Sección AFICCIONES --------------*/
+
+.aficiones {
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.aficiones__titulo {
+  font-size: var(--font-size-grande);
+  font-weight: 900;
+}
+
+.aficiones__icono {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.aficiones__nombre {
+  font-size: var(--font-size-pequena);
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+/* --------- Estilos Sección FORMACION ACADEMICA --------------*/
+.formacion {
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.formacion__titulo {
+  font-size: var(--font-size-grande);
+  font-weight: 900;
+}
+
+.formacion__icono {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.formacion__nombre {
+  font-size: var(--font-size-base);
+  font-weight: 900;
+  line-height: 1.3rem;
+}
+
+.formacion__detalle {
+  font-size: var(--font-size-pequena);
+}
+
+/* --------- Estilos Sección PROYECTOS Y EXPERIENCIA PROFESIONAL --------------*/
+.proyectos {
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.proyectos__titulo {
+  font-size: var(--font-size-grande);
+  font-weight: 900;
+  }
+
+.proyecto__imagen {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 15px 15px 0 0;
+
+}
+
+.proyectos__nombre {
+  font-size: var(--font-size-mediana);
+  font-weight: 900;
+  line-height: 1.5rem;
+  padding: var(--padding-grande);
+  margin-bottom: 10px;
+}
+
+.proyectos__descripcion {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* --------- Estilos Sección CONTACTO --------------*/
+.contacto {
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.25rem;
+  justify-content: space-between;
+  background-color: var(--color-fondo--claro);
+  padding: var(--padding-xgrande);
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+
+.contacto__titulo {
+  font-size: var(--font-size-grande);
+  font-weight: 900;
+}
+
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contacto__campo {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contacto__campo:focus {
+  border-color: var(--color-primario--claro);
+  box-shadow: 0 2px 6px rgba(0, 119, 204, 0.2);
+  outline: none;
+}
+
+.contacto__campo--textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contacto__boton {
+  padding: 12px;
+  background-color: var(--color-primario--claro);
+  color: var(--color-fondo--claro);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+
+.contacto__boton:hover {
+  background-color: var(--color-hover);
+}
+
+/* --------- Pie --------------*/
+.pie__pagina {
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-between;
+  background-color: var(--color-primario--claro);
+  padding: var(--padding-xgrande);
+  text-align: center;
+  
+}
+.pie__pagina_texto{
+  font-size: var(--font-size-mediana);
+  font-weight: 100;
+  color: var(--color-fondo--claro);
+}
+
+
+/* --------- Media Queries --------------*/
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+
+  .navegacion {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-color: var(--color-secundario);
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navegacion.navegacion-activa {
+    display: flex; 
+  }
+
+  .hamburguesa {
+    display: flex;
+  }
+
+  .navegacion__elemento {
+    margin: 10px 0;
+  }
+
+  .navegacion__elemento a {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .presentacion {
+    flex-direction: column-reverse;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .presentacion__foto {
+    border-radius: 100px 5px 5px 100px;
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto__formulario {
+    width: 100%;
+    padding: var(--padding-base);
+  }
+}
